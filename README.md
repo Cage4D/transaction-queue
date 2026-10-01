@@ -1,4 +1,4 @@
-# Transaction Queue (Leadflow)
+# Transaction Queue
 
 An application-agnostic transaction queue system built with TypeScript and PostgreSQL. Supports atomic job enqueueing within database transactions, outbox pattern, exponential backoff with jitter, lease-based locking, and graceful worker shutdown.
 
