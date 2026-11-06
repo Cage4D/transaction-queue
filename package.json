@@ -1,0 +1,35 @@
+{
+  "name": "transaction-queue",
+  "version": "1.0.0",
+  "description": "Reliable PostgreSQL-backed transaction queue with transactional enqueueing, retries, idempotency, and concurrent workers.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Cage4D",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cage4D/transaction-queue.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "example:basic": "tsx examples/basic-usage.ts",
+    "example:transactional": "tsx examples/transactional-usage.ts"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "pg": "^8.23.1",
+    "uuid": "^14.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
